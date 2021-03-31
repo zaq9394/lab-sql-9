@@ -9,21 +9,12 @@ The database is structured as follows:
 
 ### Instructions
 
-In this lab we will find the customers who were active in consecutive months of May and June. Follow the steps to complete the analysis.
+Create a Python connection with SQL database and retrieve the results of the following queries queries as dataframes:
 
-- Create a table `rentals_may` to store the data from rental table with information for the month of May.
-- Insert values in the table `rentals_may` using the table rental, filtering values only for the month of May.
-- Create a table `rentals_june` to store the data from rental table with information for the month of June.
-- Insert values in the table `rentals_june` using the table rental, filtering values only for the month of June.
-- Check the number of rentals for each customer for May.
-- Check the number of rentals for each customer for June.
-- Create a Python connection with SQL database and retrieve the results of the last two queries (also mentioned below) as dataframes:
-
-  - Check the number of rentals for each customer for May
-  - Check the number of rentals for each customer for June
-
-    **Hint**: You can store the results from the two queries in two separate dataframes.
-
-- Write a function that checks if customer borrowed more or less books in the month of June as compared to May.
-
-  **Hint**: For this part, you can create a join between the two dataframes created before, using the merge function available for pandas dataframes. Here is a link to the documentation for the [merge function](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.merge.html).
+1. How many distinct (different) actors' last names are there?
+2. Add an additional column day_type with values 'weekend' and 'workday' depending on the rental day of the week.
+3. Get all films with ARMAGEDDON in the title.
+4. Get 10 the longest films.
+5. How many films include Behind the Scenes content?
+6.  Which kind of movies (rating) have a mean duration of more than two hours?
+7.  Rank films by length (filter out the rows that have nulls or 0s in length column). In your output, only select the columns title, length, and the rank.
