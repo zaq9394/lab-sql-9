@@ -9,7 +9,7 @@ The database is structured as follows:
 
 ### Instructions
 
-Create a Python connection with SQL database and retrieve the results of the following queries queries as dataframes:
+Create a Python connection with SQL database and retrieve the results of the following queries as dataframes:
 
 1. How many distinct (different) actors' last names are there?
 2. Add an additional column day_type with values 'weekend' and 'workday' depending on the rental day of the week.
